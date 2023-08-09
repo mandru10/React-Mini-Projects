@@ -22,7 +22,7 @@ class Course extends Component{
     render(){
         return(
             <div>
-                <p onClick={this.click}>{this.props.title} <b>{this.props.price}</b></p>
+                <p className={this.state.active ? 'active' : ''} onClick={this.click}>{this.props.title} <b>{this.props.price}</b></p>
             </div>
         )
     }
